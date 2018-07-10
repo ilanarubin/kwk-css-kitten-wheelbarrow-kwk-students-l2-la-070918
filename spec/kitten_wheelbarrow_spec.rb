@@ -10,9 +10,9 @@ RSpec.describe "Kitten Wheelbarrow" do
     expect(css_file_contents).to include('#kitty-2'), "Make sure you have a #ruby CSS selector that selects the image that has a class of kitty-2"
   end
 
-  it 'selects the image inside the element with an id of basket (via descendent relationship)' do
-    expect(css_file_contents).to include('#basket img')
-  end
+  # it 'selects the image inside the element with an id of basket (via descendent relationship)' do
+  #   expect(css_file_contents).to include('#basket img')
+  # end
 
   it 'selects the image based on the respective sibling element' do
     expect(css_file_contents).to include('#ball + img')
